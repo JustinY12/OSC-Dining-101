@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+}
+
+
+header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(5px); 
+  }
+
+/*logo*/
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    background-image: url('images/logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+
+  .logo:hover { 
+    transform: scale(1.1);
+    box-shadow: 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+/* Content Styling */
+.content h1 {
+  font-size: 4rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.divider {
+  width: 40%;
+  border: 1px solid gray;
+  margin: 10px auto;
+}
+
+.countdown {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+/* Fade-in Animation */ 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/*nav*/
+
+nav {
+    background: transparent;
+    padding: 0;
+
+    
+  }
+
+nav a {
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a :hover {
+
+    text-decoration: underline; 
+}
+
+
+
+/* Background Image */
+.background {
+    background: url('images/students2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+        color: white;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+
+  .background2 {
+    background: url('images/students4.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+
+  .background4 {
+    background: url('images/food_prep.jpeg') no-repeat center center/cover;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 10px 10sx;
+    position: relative;
+  }
+
+  .background3 {
+    background: url('images/food_prep.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  /*about us img*/
+  .img1 {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+  .img1 {
+    height: 500px;
+    width: auto;
+    border: 2px solid black;
+    padding: 20px;
+  }
+  
+  .content {  
+    text-align: center;
+    
+  }
+/*menu*/
+.menu-section {
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.unique-collage-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.collage-item {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collage-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  
+}
+
+.collage-item:hover .collage-img {
+  transform: scale(1.05);
+}
+
+.wine-byo-sign{
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*price*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.price-text {
+  margin: 0;
+  font-weight: bold;
+}
+
+/*Animations for menu */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+/*about us - support section*/
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.about {
+  background-color: white;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding:100px 20px;
+  text-align: center;
+}
+
+
+.support {
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+/*Contact Page*/
+
+.locator-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center; 
+  gap: 30px; 
+  padding: 0 20px; 
+
+
+}
+
+.store-card {
+  width: 350px;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.store-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.store-card p,
+.store-card ul {
+  margin: 10px 0;
+}
+
+.status {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.store-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.store-card button {
+  background-color: #5e00b8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/*map*/
+
+.map-container {
+  position: relative;
+  width: 40%; 
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 120px;
+  max-width: 600px;
+  float: right; 
+
+
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*booking section*/
+
+.booking-section {
+  max-width: 700px;
+  margin: 110px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.booking-subtext {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.booking-iframe {
+  width: 100%;
+  height: 1475px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: #000000;
+  padding: 80px 400px; 
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px; 
+  margin: 0 auto;
+}
+.footer-logo img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  margin: 10px 20px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+
+
+/*logo KidsCan*/
+
+.kidsCan {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+/*Privacy Policy*/
+
+.privacy-policy {
+  max-width: 800px;
+  margin: 110px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: #333;
+}
+
+.privacy-policy h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color:  #414bdc;
+}
+
+.privacy-policy h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #489cd0;
+}
+
+.privacy-policy p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.privacy-policy ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.privacy-policy a {
+  color: #489cd0;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+/*terms of use*/
+
+.terms-of-use {
+  max-width: 800px;
+  margin: 110px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: #333;
+}
+
+.terms-of-use h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #414ac8;
+}
+
+.terms-of-use h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #489cd0;
+}
+
+.terms-of-use p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.terms-of-use a {
+  color: #559bca;
+  text-decoration: none;
+}
+
+.terms-of-use a:hover {
+  text-decoration: underline;
+}
+
+

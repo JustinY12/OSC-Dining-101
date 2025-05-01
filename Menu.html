@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Menu</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"  class="logo"></a>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="Menu.html">MENU</a>
+      <a href="Contact.html">CONTACT US</a>
+      <a href="Book Now.html">BOOK NOW</a>
+    </nav>
+  </header>
+
+  <script>
+    // JavaScript
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('mouseover', function() {
+        link.style.color = 'black'; 
+      });
+
+      link.addEventListener('mouseout', function() {
+        link.style.color = 'white'; 
+      });
+    });
+  </script>
+
+
+
+</body>
+
+  <div class="background2">
+    <div class="content">
+      <h1 class="fade-in">Welcome to Our Menu</h1>
+      <hr class="divider">
+      <p class="countdown"></p>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="section-title">Entrées</h2>
+    <div class="unique-collage-container">
+      <div class="collage-item">
+        <img src="images/corn_fritters_closeup.jpeg" class="collage-img" alt="Corn Fritters">
+        <div class="overlay">
+          <p class="price-text">Corn Fritters | $9</p>
+        </div>
+      </div>
+      <div class="collage-item">
+      <img src="images/scallops.jpg" class="collage-img" alt="Garlic Lemon Scallops">
+      <div class="overlay">
+        <p class="price-text">Garlic Lemon Scallops | $13</p>
+    </div>
+  </div>
+  <div class="collage-item">
+  <img src="images/kumera_fries.jpg" class="collage-img" alt="Crunchy Maple Baked
+  Kumara Wedges">
+  <div class="overlay">
+    <p class="price-text">Crunchy Maple Baked
+      Kumara Wedges | $8</p>
+</div>
+</div>
+
+
+  <div class="menu-section">
+    <h2 class="section-title">Mains</h2>
+    <div class="unique-collage-container">
+      <div class="collage-item">
+        <img src="images/fish_chips.jpg" class="collage-img" alt="Fish & Chips">
+        <div class="overlay">
+          <p class="price-text">Fish & Chips | $18</p>
+        </div>
+      </div>
+      <div class="collage-item">
+      <img src="images/lamb_cutlets.jpeg" class="collage-img" alt="Kiwi Lamb Cutlet">
+      <div class="overlay">
+        <p class="price-text">Kiwi Lamb Cutlet | $25</p>
+    </div>
+    </div>
+    <div class="collage-item">
+    <img src="images/scotch_fillet1.jpg" class="collage-img" alt="Scotch Fillet">
+    <div class="overlay">
+      <p class="price-text">
+        Scotch Fillet | $26</p>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="section-title">Desserts</h2>
+    <div class="unique-collage-container">
+      <div class="collage-item">
+        <img src="images/hokey_pokey_icecream.jpg" class="collage-img" alt="Hokey Pokey Ice Cream">
+        <div class="overlay">
+          <p class="price-text">Hokey Pokey Ice Cream | $7</p>
+        </div>
+      </div>
+      <div class="collage-item">
+        <img src="images/kiwifruit_cheesecake.jpg" class="collage-img" alt="Kiwi Fruit Cheesecake">
+        <div class="overlay">
+          <p class="price-text">Kiwi Fruit Cheesecake | $9</p>
+        </div>
+      </div>
+      <div class="collage-item">
+        <img src="images/pavlova.jpeg" class="collage-img" alt="Mini Pavlova">
+        <div class="overlay">
+          <p class="price-text">Mini Pavlova | $8</p>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="section-title">Bevrages<div class="wine-byo-sign">🍷 Wine (BYO)</div></h2>
+    <div class="unique-collage-container">
+      <div class="collage-item">
+        
+        <img src="https://www.shopnz.com/cdn/shop/products/hsk-085-lemon-and-paeroa-l-1275111.jpg?v=1662770945" class="collage-img" alt="Hokey Pokey Ice Cream">
+        <div class="overlay">
+          <p class="price-text">L&P | $8</p>
+        </div>
+      </div>
+      <div class="collage-item">
+        <img src="https://freerangestock.com/sample/123161/espresso-coffee.jpg"class="collage-img" alt="Kiwi Fruit Cheesecake">
+        <div class="overlay">
+          <p class="price-text">Espresso Coffee | $3</p>
+        </div>
+        
+      </div>
+      <div class="collage-item">
+        <img src="https://artfultea.com/cdn/shop/products/BF_2B-_2BPomegranate_2BLemon_2B_28cup_2B2_29.jpg?v=1715870846&width=1946" class="collage-img" alt="fresh brewed tea">
+        <div class="overlay">
+          <p class="price-text">Fresh Brewed Tea | $4</p>
+          
+
+
+    </div>
+              
+  </div>
+  </div>
+</div>
+
+  </head>
+  
+  <body>
+  
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Ormiston Logo">
+        </div>
+  
+        <div class="footer-column">
+          <h3>Ormiston 101</h3>
+          <ul>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="https://www.kidscan.org.nz/">Support Services | KidsCan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+            
+            <li><a href="Terms of Use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        
+  
+  
+        <div class="footer-column">
+          <h3>Find Our Restaurant</h3>
+          <ul>
+            <li><a href="Contact.html">Location</a></li>
+            <li><a href="Menu.html">Online Menu</a></li>
+            <li><a href="Contact.html">Opening Hours</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>Copyright © Ormiston Senior College 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+  
+  </body>
+  </html>
